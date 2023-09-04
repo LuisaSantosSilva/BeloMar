@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- Importa o arquivo CSS do Bootstrap para estilização -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <!-- Importa os arquivos JavaScript do Bootstrap para funcionalidades interativas -->
+    <link rel="stylesheet" href="assets/style.css">
+    <!-- Importa um arquivo de estilo personalizado (style.css) -->
+    <title>Cadastro</title>
+    <!-- Define o título da página como "Cadastro" -->
+</head>
+
+<body>
+  <!-- Barra de navegação Bootstrap -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <!-- Botão de alternância para dispositivos móveis -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Lista de navegação -->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <!-- Item de menu com dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <!-- Conteúdo do dropdown -->
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <!-- Item de menu desabilitado -->
+            <a class="nav-link disabled">Disabled</a>
+          </li>
+        </ul>
+        <!-- Formulário de pesquisa -->
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- Conteúdo principal -->
+  <br>
+  <!-- Uma linha com três colunas -->
+  <div class="row">
+    <div class="col">
+      <!-- Título principal -->
+      <h2 class="h1">Flor Margarida</h2>
+    </div>
+    <br>
+  </div>
+  <!-- Outra linha com três colunas -->
+  <div class="row">
+    <div class="col">
+      <!-- Espaço em branco -->
+    </div>
+    <div class="col">
+      <!-- Parágrafo de texto sobre margarida -->
+      <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, nam earum deleniti quibusdam odit
+        blanditiis similique hic? Laborum nihil veritatis quaerat neque repudiandae id incidunt corrupti velit ratione,
+        quis itaque.</p>
+    </div>
+    <div class="col">
+      <!-- Mais texto sobre margarida -->
+      <p class="p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem, at. Velit dolor eveniet temporibus
+        expedita assumenda culpa fugiat consequatur nam, quam quis non necessitatibus maiores quae ratione at ipsum
+        recusandae!</p>
+    </div>
+    <div class="col">
+      <!-- Espaço em branco -->
+    </div>
+  </div>
+  <br>
+  <!-- Conteúdo de produtos com cartões Bootstrap -->
+  <div class="container text-center">
+    <!-- Primeira linha de cartões -->
+    <div class="row">
+      <div class="col">
+        <!-- Cartão com informações de produto -->
+        <div class="card" style="width: 15rem;">
+          <img src="assets/img/" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Arranjo 02 Girassóis</h5>
+            <p class="card-text">Por R$64,90</p>
+            <!-- Botão para abrir um modal (janela pop-up) -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              Compre agora!
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <!-- Cartão com informações de produto -->
+        <div class="card" style="width: 15rem;">
+          <img src="assets/img/" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Arranjo 02 Girassóis</h5>
+            <p class="card-text">Por R$64,90</p>
+            <!-- Botão para abrir um modal (janela pop-up) -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              Compre agora!
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <!-- Cartão com informações de produto -->
+        <div class="card" style="width: 15rem;">
+          <img src="assets/img/" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Arranjo 02 Girassóis</h5>
+            <p class="card-text">Por R$64,90</p>
+            <!-- Botão para abrir um modal (janela pop-up) -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              Compre agora!
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <!-- Cartão com informações de produto -->
+        <div class="card" style="width: 15rem;">
+          <img src="assets/img/" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Arranjo 02 Girassóis</h5>
+            <p class="card-text">Por R$64,90</p>
+            <!-- Botão para abrir um modal (janela pop-up) -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              Compre agora!
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Mais linhas de cartões (repetição) -->
+    <br>
+    <div class="row">
+      <div class="col">
+        <!-- Cartão com informações de produto -->
+        <div class="card" style="width: 15rem;">
+          <img src="assets/img/" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Arranjo 02 Girassóis</h5>
+            <p class="card-text">Por R$64,90</p>
+            <!-- Botão para abrir um modal (janela pop-up) -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              Compre agora!
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <!-- Cartão com informações de produto -->
+        <div class="card" style="width: 15rem;">
+          <img src="assets/img/" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Arranjo 02 Girassóis</h5>
+            <p class="card-text">Por R$64,90</p>
+            <!-- Botão para abrir um modal (janela pop-up) -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              Compre agora!
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <!-- Cartão com informações de produto -->
+        <div class="card" style="width: 15rem;">
+          <img src="assets/img/" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Arranjo 02 Girassóis</h5>
+            <p class="card-text">Por R$64,90</p>
+            <!-- Botão para abrir um modal (janela pop-up) -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              Compre agora!
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <!-- Cartão com informações de produto -->
+        <div class="card" style="width: 15rem;">
+          <img src="assets/img/" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Arranjo 02 Girassóis</h5>
+            <p class="card-text">Por R$64,90</p>
+            <!-- Botão para abrir um modal (janela pop-up) -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              Compre agora!
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col">
+        <!-- Cartão com informações de produto -->
+        <div class="card" style="width: 15rem;">
+          <img src="assets/img/" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Arranjo 02 Girassóis</h5>
+            <p class="card-text">Por R$64,90</p>
+            <!-- Botão para abrir um modal (janela pop-up) -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              Compre agora!
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <!-- Cartão com informações de produto -->
+        <div class="card" style="width: 15rem;">
+          <img src="assets/img/" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Arranjo 02 Girassóis</h5>
+            <p class="card-text">Por R$64,90</p>
+            <!-- Botão para abrir um modal (janela pop-up) -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              Compre agora!
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <!-- Cartão com informações de produto -->
+        <div class="card" style="width: 15rem;">
+          <img src="assets/img/" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Arranjo 02 Girassóis</h5>
+            <p class="card-text">Por R$64,90</p>
+            <!-- Botão para abrir um modal (janela pop-up) -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              Compre agora!
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <!-- Cartão com informações de produto -->
+        <div class="card" style="width: 15rem;">
+          <img src="assets/img/" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Arranjo 02 Girassóis</h5>
+            <p class="card-text">Por R$64,90</p>
+            <!-- Botão para abrir um modal (janela pop-up) -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              Compre agora!
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
