@@ -1,0 +1,19 @@
+.container-fluid a{
+    background: transparent;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#ppq{
+    border-radius: 50%;
+}
+.card {
+    margin: 100px auto 0;
+    width: 400px;
+    height: 600px;
+    perspective: 1000px;
+  }
+
+ #linkdatas{
+    color: black;
+  }
