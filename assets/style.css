@@ -23,12 +23,11 @@ img {
     border-radius: 50%;
 }
 
-.container-fluid a{
+.container-fluid a {
     background: transparent;
     color: black;
-    font-family: "Papyrus", fantasy;
-  }
-
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
 
     .titulosignifi{
             font-weight: bold;

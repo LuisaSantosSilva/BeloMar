@@ -13,55 +13,44 @@
   <!-- Importa os arquivos JavaScript do Bootstrap para funcionalidades interativas -->
   <link rel="stylesheet" href="assets/style.css">
   <!-- Importa um arquivo de estilo personalizado (style.css) -->
-  <title>Cadastro</title>
+  <title>Rosa</title>
   <!-- Define o título da página como "Cadastro" -->>
 </head>
 
 <body>
   <!-- Barra de navegação Bootstrap -->
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <<nav class="navbar bg-body-tertiary" id="navbar">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <!-- Botão de alternância para dispositivos móveis -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <!-- Lista de navegação -->
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <!-- Item de menu com dropdown -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
-            </a>
-            <!-- Conteúdo do dropdown -->
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <!-- Item de menu desabilitado -->
-            <a class="nav-link disabled">Disabled</a>
-          </li>
-        </ul>
-        <!-- Formulário de pesquisa -->
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-      </div>
+      <ul class="nav nav-underline">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Ações Sociais</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Produtos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">Contatos</a>
+        </li>
+      </ul>
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="navbar-brand" href="#">BeloMar</a>
+        </li>
+      </ul>
+      <ul class="nav nav-underline">
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <Link> Datas comemorativas</Link>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Alergias</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Sobre nós</a>
+        </li>
+    </div>
+    </ul>
     </div>
   </nav>
   <!-- Conteúdo principal -->
@@ -103,10 +92,10 @@
       <div class="col">
         <!-- Cartão com informações de produto -->
         <div class="card" style="width: 15rem;">
-          <img src="assets/img/" class="card-img-top" alt="...">
+          <img src="assets/img/BUQUÊ DE 6 ROSAS VERMELHAS.webp" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Arranjo 02 Girassóis</h5>
-            <p class="card-text">Por R$64,90</p>
+            <h5 class="card-title">Buquê de 6 Rosas Vermelhas</h5>
+            <p class="card-text">Por R$ 109,90</p>
             <!-- Botão para abrir um modal (janela pop-up) -->
             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
               Compre agora!
@@ -117,10 +106,10 @@
       <div class="col">
         <!-- Cartão com informações de produto -->
         <div class="card" style="width: 15rem;">
-          <img src="assets/img/" class="card-img-top" alt="...">
+          <img src="assets/img/ROSAS NO ENVELOPE LOVE.webp" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Arranjo 02 Girassóis</h5>
-            <p class="card-text">Por R$64,90</p>
+            <h5 class="card-title">Rosa no Envelope Love</h5>
+            <p class="card-text">Por R$ 230,90</p>
             <!-- Botão para abrir um modal (janela pop-up) -->
             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
               Compre agora!
@@ -131,10 +120,10 @@
       <div class="col">
         <!-- Cartão com informações de produto -->
         <div class="card" style="width: 15rem;">
-          <img src="assets/img/" class="card-img-top" alt="...">
+          <img src="assets/img/PASSIONE DE ROSAS VERMELHAS.webp" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Arranjo 02 Girassóis</h5>
-            <p class="card-text">Por R$64,90</p>
+            <h5 class="card-title">Passione de Rosas Vermelhas</h5>
+            <p class="card-text">Por R$ 298,90</p>
             <!-- Botão para abrir um modal (janela pop-up) -->
             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
               Compre agora!
@@ -145,9 +134,9 @@
       <div class="col">
         <!-- Cartão com informações de produto -->
         <div class="card" style="width: 15rem;">
-          <img src="assets/img/" class="card-img-top" alt="...">
+          <img src="assets/img/CAIXA PREMIUM EU TE AMO.webp" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Arranjo 02 Girassóis</h5>
+            <h5 class="card-title">Caixa Premium Eu Te Amo</h5>
             <p class="card-text">Por R$64,90</p>
             <!-- Botão para abrir um modal (janela pop-up) -->
             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
@@ -163,10 +152,10 @@
       <div class="col">
         <!-- Cartão com informações de produto -->
         <div class="card" style="width: 15rem;">
-          <img src="assets/img/" class="card-img-top" alt="...">
+          <img src="assets/img/POEMA DE 24 ROSAS VERMELHAS.webp" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Arranjo 02 Girassóis</h5>
-            <p class="card-text">Por R$64,90</p>
+            <h5 class="card-title">Poema de 24 Rosas Vermelhas</h5>
+            <p class="card-text">Por R$ 399,90</p>
             <!-- Botão para abrir um modal (janela pop-up) -->
             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
               Compre agora!
@@ -177,10 +166,10 @@
       <div class="col">
         <!-- Cartão com informações de produto -->
         <div class="card" style="width: 15rem;">
-          <img src="assets/img/" class="card-img-top" alt="...">
+          <img src="assets/img/ARRANJO 3 LINDAS ROSAS VERMELHAS.webp" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Arranjo 02 Girassóis</h5>
-            <p class="card-text">Por R$64,90</p>
+            <h5 class="card-title">Arranjo 3 Lindas Rosos Vermelhas</h5>
+            <p class="card-text">Por R$ 139,90</p>
             <!-- Botão para abrir um modal (janela pop-up) -->
             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
               Compre agora!
@@ -191,10 +180,10 @@
       <div class="col">
         <!-- Cartão com informações de produto -->
         <div class="card" style="width: 15rem;">
-          <img src="assets/img/" class="card-img-top" alt="...">
+          <img src="assets/img/SENSACIONAL ROSA IMPORTADA VERMELHA.webp" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Arranjo 02 Girassóis</h5>
-            <p class="card-text">Por R$64,90</p>
+            <h5 class="card-title">Sensacional Rosa Importada Vermelha</h5>
+            <p class="card-text">Por R$ 44,90</p>
             <!-- Botão para abrir um modal (janela pop-up) -->
             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
               Compre agora!
@@ -205,69 +194,10 @@
       <div class="col">
         <!-- Cartão com informações de produto -->
         <div class="card" style="width: 15rem;">
-          <img src="assets/img/" class="card-img-top" alt="...">
+          <img src="assets/img/BUQUÊ MAGNÍFICO DE ROSAS VERMELHAS.webp" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Arranjo 02 Girassóis</h5>
-            <p class="card-text">Por R$64,90</p>
-            <!-- Botão para abrir um modal (janela pop-up) -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-              Compre agora!
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <br>
-    <div class="row">
-      <div class="col">
-        <!-- Cartão com informações de produto -->
-        <div class="card" style="width: 15rem;">
-          <img src="assets/img/" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Arranjo 02 Girassóis</h5>
-            <p class="card-text">Por R$64,90</p>
-            <!-- Botão para abrir um modal (janela pop-up) -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-              Compre agora!
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <!-- Cartão com informações de produto -->
-        <div class="card" style="width: 15rem;">
-          <img src="assets/img/" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Arranjo 02 Girassóis</h5>
-            <p class="card-text">Por R$64,90</p>
-            <!-- Botão para abrir um modal (janela pop-up) -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-              Compre agora!
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <!-- Cartão com informações de produto -->
-        <div class="card" style="width: 15rem;">
-          <img src="assets/img/" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Arranjo 02 Girassóis</h5>
-            <p class="card-text">Por R$64,90</p>
-            <!-- Botão para abrir um modal (janela pop-up) -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-              Compre agora!
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <!-- Cartão com informações de produto -->
-        <div class="card" style="width: 15rem;">
-          <img src="assets/img/" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Arranjo 02 Girassóis</h5>
-            <p class="card-text">Por R$64,90</p>
+            <h5 class="card-title">Buquê Magnífico de Rosas Vermelhas</h5>
+            <p class="card-text">Por R$ 179,90</p>
             <!-- Botão para abrir um modal (janela pop-up) -->
             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
               Compre agora!
