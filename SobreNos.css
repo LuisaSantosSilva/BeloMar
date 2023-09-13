@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+/* Estilizando a cor de todos os textos que forem h4 */
+h4 {
+    color: #214f84;
+}
+
+/* Estilizando a cor do fundo da navbar */
+.navbar{
+    background-color:rgb(33, 79, 132);
+}
+
+/* Estilizando a largura do card */
+.card {
+    width: 250px;
+}
+
+/* Estilizando todos os textos que estiverem com esse id para justificado */
+div#text{
+    text-align: justify;
+}
+
+/* Estilizando o diário de bordo*/
+div#DiarioTitulo{
+    color: aliceblue;
+}
+div#DiariodeBordo{
+    background-color:rgb(33, 79, 132);
+}
+
+/* Estilizando o que está referente ao bloco sobre o Time */
+div#Time{
+    background-color:rgb(33, 79, 132);
+}
+div#textoTime{
+    color: aliceblue;
+}
+img#equipe {
+    border-radius: 20%;
+}
+
+
+
