@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+#p{
+  text-align: justify;
+}
+
+#ppq{
+    border-radius: 25%;
+}
+
+#ppd{
+  border-radius: 10%;
+}
+.mar{
+    text-align: justify;
+}
+.card {
+
+    margin: 100px auto 0;
+
+    width: 400px;
+    height: 600px;
+    perspective: 1000px;
+}

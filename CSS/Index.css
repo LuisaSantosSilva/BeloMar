@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+/* Estilizando a navbar */
+.navbar{
+  background-color:rgb(33, 79, 132);
+}
+
+.container-fluid a {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  
+}
+
+#h3{
+    color: #214f84;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: xx-large;
+}
+
+.footer-link{
+  color: whitesmoke;
+}
+
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: #214f84;
+    color: white;
+  }
+
+.card {
+    margin: 100px auto 0;
+    width: 400px;
+    height: 600px;
+    perspective: 1000px;
+}
+
+#ppq{
+    border-radius: 25%;
+}
+
+#ppd{
+  border-radius: 10%;
+}
+.mar{
+    text-align: justify;
+}

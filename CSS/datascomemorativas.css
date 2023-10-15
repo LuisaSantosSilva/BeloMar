@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+.texto1{
+  text-align: justify;
+}
+
+#h3{
+  color: #214f84;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+font-size: xx-large;
+}
+
+.card {
+  margin: 100px auto 0;
+  width: 400px;
+  height: 600px;
+  perspective: 1000px;
+}
+
+#linkdatas {
+  color: black;
+}
+
+#ppq{
+  border-radius: 25%;
+}
+
+.mar{
+  text-align: justify;
+}
+

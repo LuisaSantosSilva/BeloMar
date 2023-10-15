@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+.p{
+    text-align: justify;
+    
+}
+ 
+.h1{
+    text-align: center;
+}
+
+.card {
+  width: 15rem;
+  height: 27rem;
+  margin: 10px auto 0;
+  perspective: 1000px;
+}

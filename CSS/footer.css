@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+/* Estilizando a navbar */
+.footer-link{
+  color: whitesmoke;
+}
+
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: #214f84;
+    color: white;
+  }
