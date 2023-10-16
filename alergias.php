@@ -37,11 +37,9 @@
                 </p>
             </div>
         </div>
-    </div>
     
     <hr>
     
-    <div class="container text-center">
         <div class="row">
             <h3>Conheça flores que não dão alergia</h3>
             <div class="col" class="mar">
@@ -50,13 +48,11 @@
                 Montamos com todo carinho e cuidado essa lista com as melhores opções para você!
             </div>
         </div>
-    </div>
     
     <br>
     
     <hr>
     
-    <div class="container text-center">
         <div class="row">
             <div class="col">
                 <img src="img/img_Alergias/alergia1.jpg" width="175" height="175" id="ppq">
@@ -71,10 +67,9 @@
                 <p> Orquídeas </p>
             </div>
         </div>
-    </div>
+        
     <br>
     
-    <div class="container text-center">
         <div class="row">
             <div class="col">
                 <img src="img/img_Alergias/alergia4.jpg" width="175" height="175" id="ppq">
@@ -91,7 +86,6 @@
         </div>
     </div>
     
-    <hr>
     <br>
     
     <!-- Footer da página: -->
