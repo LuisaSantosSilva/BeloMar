@@ -43,7 +43,7 @@
             </div>
           </div>
       </div>
-      <a>Realização: Luisa - Revellin - Mariana - Layara - Nickolas </a>
+      <a>Realização: Luisa - Revellin - Mariana - Layara - Nikolas </a>
   </footer><!--fim do rodapé-->
 
     <!--API de Libras --> 
