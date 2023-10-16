@@ -12,3 +12,14 @@
 .ongass {
   text-align: justify;
 }
+
+.container__ongs, .card__ong{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__ong{
+  margin-bottom: 1rem;
+}

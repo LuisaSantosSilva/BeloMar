@@ -36,38 +36,40 @@
                 <br>
             </div>
         </div>
-        
+    
+    </div>
 
-        <div class="row">
-            <div class="col">
-                <div class="card">
-                    <img src="img/img_AcoesSociais/ong1.jfif" class="card-img" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">SOS Amazonia</h5>
-                        <a id="ongbtn" href="https://sosamazonia.org.br/" class="btn btn-primary">+</a>
+        <div class="container__ongs">
+            <div class="row">
+                <div class="col card__ong">
+                    <div class="card">
+                        <img src="img/img_AcoesSociais/ong1.jfif" class="card-img" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">SOS Amazonia</h5>
+                            <a id="ongbtn" href="https://sosamazonia.org.br/" class="btn btn-primary">+</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <img src="img/img_AcoesSociais/ong2.jfif" class="card-img" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Desengarrafando mentes</h5>
-                        <a id="ongbtn" href="https://desengarrafandomentes.wordpress.com" class="btn btn-primary">+</a>
+                <div class="col card__ong">
+                    <div class="card">
+                        <img src="img/img_AcoesSociais/ong2.jfif" class="card-img" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Desengarrafando mentes</h5>
+                            <a id="ongbtn" href="https://desengarrafandomentes.wordpress.com" class="btn btn-primary">+</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <img src="img/img_AcoesSociais/ong3.jfif" class="card-img" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Ibirapuera conservação</h5>
-                        <a id="ongbtn" href="https://www.atados.com.br/ong/ibiraconservacao" class="btn btn-primary">+</a>
+                <div class="col card__ong">
+                    <div class="card">
+                        <img src="img/img_AcoesSociais/ong3.jfif" class="card-img" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Ibirapuera conservação</h5>
+                            <a id="ongbtn" href="https://www.atados.com.br/ong/ibiraconservacao" class="btn btn-primary">+</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
     <br>
     <hr>

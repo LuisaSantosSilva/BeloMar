@@ -69,22 +69,20 @@
            <div class="row">
                <div class="col">
                    <img src="img/img_Index/sign1.png" width="250" height="400" id="ppd">
-                   <br><hr>
                </div>
                <div class="col">
                    <img src="img/img_Index/sign2.png" width="250" height="400" id="ppd">
-                   <br><hr>
                </div>
            </div>
+           <br>
+           <hr>
            <br>
            <div class="row">
                <div class="col">
                    <img src="img/img_Index/sign3.png" width="250" height="400" id="ppd">
-                   <br><hr>
                </div>
                <div class="col">
                    <img src="img/img_Index/sign4.png" width="250" height="400" id="ppd">
-                   <br><hr>
                </div>
            </div>
            <br>
@@ -94,7 +92,8 @@
                    <p>Caso queira conhecer mais significados vá para barra de navegação</p>
                </div>
            </div>
-       </div>
+           <hr>
+</div>
        <br>
        <div class="container text-center" id="HomeBody2">
            <div class="row">

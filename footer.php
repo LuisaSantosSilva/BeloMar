@@ -30,13 +30,16 @@
               <a class="footer-link" href="produtos.php"> Produtos</a>
             </div>
             <div class="row">
-              <a class="footer-link" href="diadosnamorados.php">Datas comemorativas</a>
-            </div>
-            <div class="row">
               <a class="footer-link" href="alergias.php">Alergias</a>
             </div>
             <div class="row">
               <a class="footer-link" href="sobrenos.php">Sobre nós</a>
+            </div>
+            <div class="row">
+              <a class="footer-link" href="acoessociais.php">Ações Sociais</a>
+            </div>
+            <div class="row">
+              <a class="footer-link" href="login.php">Cadastre-se em nosso site!</a>
             </div>
           </div>
       </div>
