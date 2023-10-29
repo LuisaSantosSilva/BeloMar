@@ -9,6 +9,10 @@ O projeto foi dividido em duas partes.
 Na primeira parte foram definidas as cores e fontes do visual do site.<br>
 Já na segunda parte fizemos a documentação com diagramas, utilizando a UML (Unified Modeling Language), logo após utilizamos as linguagens de programação JavaScript, PHP e implementamos as APIs (Application Programming Interface) para suporte a Libras em nosso sistema e ViaCep para Consultar CEP de endereçamento do Brasil gratuitamente.
 
+**Clique aqui para acessar a documentação do Projeto:**
+
+[![Documentos](https://img.shields.io/badge/Documentação_BeloMar_2023-214F84?style=for-the-badge)](https://github.com/LuisaSantosSilva/BeloMar/tree/main/Documentos)
+
 **Linguagens e técnologias que utilizamos:** <br>
 <p>
 <img src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-original.svg" title="HTML5" alt="HTML" width="40" height="30"/>&nbsp;
@@ -18,7 +22,6 @@ Já na segunda parte fizemos a documentação com diagramas, utilizando a UML (U
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" title="MySql" alt="MySql" width="40" height="30" />&nbsp;
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg" title="Bootstrap" alt="Bootstrap" width="40"height="30"/>&nbsp;
 </p>
-
 
 **Possíveis perguntas:**
 
