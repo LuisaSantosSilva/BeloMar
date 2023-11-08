@@ -1,109 +1,5 @@
 @charset "UTF-8";
 
-.perfil{
-    align-items: center;
-    justify-content: center;
-    height: 50%;
-    width: 50%;
-}
-
-.container-fluid a {
-    background: transparent;
-    color: whitesmoke;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
- 
-#h3{
-    color: #214f84;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-font-size: xx-large;
-}
- 
-#navbar{
-    background-color: #214f84;
-}
- 
-footer {
-    text-align: center;
-    padding: 3px;
-    background-color: #214f84;
-    color: white;
-  }
- 
-  .card{
-    width: 18rem;
-  }
- 
-#linkdatas {
-    color: black;
-}
- 
-#ppq{
-    border-radius: 25%;
-}
- 
-.ongass{
-    text-align: center;
-}
- 
-.mar{
-    text-align: justify;
-}
- 
-.ong{
-    align-content: center;
-}
- 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.button{
-    transform: scale(1.03);
-    transition-duration: 0.5s;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
- 
-}
-.text{
-    text-align: justify;
-}
- 
-.cardmari{
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
-}
- 
-img {
-    border-radius: 50%;
-}
- 
-.container-fluid a {
-    background: transparent;
-    color: black;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
- 
-    .titulosignifi{
-            font-weight: bold;
-            font-size: 100%;
-    }
- 
-.h1{
-    text-align: center;
-    }
-    .p{
-        text-align: center;
-        text-align: justify;
-    }
-    .card{
-        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
-    }
-    .btn:hover{
-        transform: scale(1.03);
-        transition-duration: 1s;
-    }
- 
 .container-login {
     /* container-login é o container principal que abrange toda a página de login. */
     position: relative;
@@ -111,7 +7,7 @@ img {
     height: 100vh;
     display: flex;
 }
- 
+
 .img-box {
     /* img-box estiliza a seção esquerda que contém a imagem de fundo. */
     width: 50%;
@@ -119,13 +15,13 @@ img {
     background-color: #214f84;
     padding: 20px;
 }
- 
+
 .img-box img {
     width: 100%;
     height: 100%;
 }
- 
- 
+
+
 .content-box {
     /* content-box estiliza a seção direita que contém o formulário de login. */
     display: flex;
@@ -134,14 +30,14 @@ img {
     width: 50%;
     height: 100%;
 }
- 
+
 .content-box .form-box {
     /* content-box estiliza a seção direita que contém o formulário de login. */
     /* .form-box estiliza o contêiner do formulário de login. */
     width: 50%;
 }
- 
- 
+
+
 .content-box .form-box .ul {
     /* content-box estiliza a seção direita que contém o formulário de login. */
     /* .form-box estiliza o contêiner do formulário de login. */
@@ -149,7 +45,7 @@ img {
     align-items: center;
     justify-content: center;
 }
- 
+
 .content-box .form-box .ul li {
     /* content-box estiliza a seção direita que contém o formulário de login. */
     /* .form-box estiliza o contêiner do formulário de login. */
@@ -164,18 +60,18 @@ img {
     cursor: pointer;
     transition: 0.3s;
 }
- 
+
 .content-box .form-box .ul li:hover {
     /* content-box estiliza a seção direita que contém o formulário de login. */
     /* .form-box estiliza o contêiner do formulário de login. */
     background: #e4e4e4;
 }
- 
+
 .form-box .ul li img {
     /* .form-box estiliza o contêiner do formulário de login. */
     width: 40px;
 }
- 
+
 .content-box .form-box h2 {
     /* content-box estiliza a seção direita que contém o formulário de login. */
     /* .form-box estiliza o contêiner do formulário de login. */
@@ -186,13 +82,14 @@ img {
     margin-bottom: 15px;
     text-align: center;
 }
- 
- 
+
+
+
 .content-box .form-box .input-box {
     /*.input-box estiliza as caixas de entrada de texto do formulário.*/
     margin-bottom: 20px;
 }
- 
+
 .content-box .form-box .input-box input {
     width: 100%;
     padding: 10px;
@@ -204,7 +101,7 @@ img {
     background-color: #ecf2f7;
     border-radius: 5px;
 }
- 
+
 .content-box .form-box .input-box span {
     font-size: 16px;
     margin-bottom: 5px;
@@ -212,13 +109,13 @@ img {
     color: #32324f;
     font-weight: 400;
 }
- 
+
 .content-box .form-box .input-box input::placeholder {
     color: #a9adb6;
 }
- 
- 
-.btn btn-info {
+
+
+.content-box .form-box .input-box input[type=submit] {
     /*.input-box input[type=submit] estiliza o botão de login.*/
     background: #214f84;
     color: #fff;
@@ -229,28 +126,89 @@ img {
     font-size: 20px;
     transition: 0.3s;
 }
- 
- 
+
+
+.content-box .form-box .input-box input[type=submit]:hover {
+    /*.input-box input[type=submit] estiliza o botão de login.*/
+    background: #3286ca;
+}
+
+
+.content-box .form-box .remember {
+    /*.remember estiliza a seção de "lembrar de mim" com uma caixa de seleção e um link "Esqueceu a Senha?".*/
+    margin-bottom: 20px;
+    color: #32324f;
+    font-weight: 400;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-box .form-box .remember a {
+    text-decoration: none;
+    color: #4aa4ee;
+}
+
+.content-box .form-box .remember a:hover {
+    color: #3286ca;
+}
+
 .content-box .form-box .input-box p {
     color: #32324f;
 }
- 
+
 .content-box .form-box .input-box p a {
- 
+
     color: #4aa4ee;
 }
- 
+
 .content-box .form-box .input-box p a:hover {
+    
     color: #3286ca;
 }
- 
+
 .content-box .form-box h3 {
     color: #607d8b;
     text-decoration: none;
     margin: 40px 0 15px;
     font-weight: 500;
     text-align: center;
-    content: center;
     font-size: 22px;
 }
- 
+
+@media (max-width:868px) {
+
+    /*@media aplicam estilos diferentes para diferentes tamanhos de tela, tornando a página responsiva.*/
+    .container-login .img-box {
+        display: none;
+    }
+
+    .container-login .content-box {
+        width: 100%;
+    }
+
+    .container-login .content-box .form-box {
+        width: 100%;
+        padding: 40px;
+        background: white;
+        margin: 50px;
+    }
+
+    .container-login .content-box .form-box h3 {
+        margin: 30px 0 10px;
+    }
+}
+
+@media (max-width:450px) {
+
+    /*@media aplicam estilos diferentes para diferentes tamanhos de tela, tornando a página responsiva.*/
+    .container-login .content-box .form-box .remember {
+        flex-wrap: wrap;
+    }
+
+    .container-login .content-box .form-box .remember a {
+        margin-top: 20px;
+    }
+
+}
