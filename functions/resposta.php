@@ -5,25 +5,16 @@ include("conexao.php");
 $nome = $_POST['nome'];
 $email = $_POST['email'];
 $telefone = $_POST['telefone'];
+$senha=md5($_POST['senha']);
 
-print_r($nome);
-print_r($email);
-print_r($telefone);
 //Inserindo dados na tabela
+$sql = "INSERT INTO clientes(nome, email, telefone, senha) VALUES ('$nome', '$email', '$telefone', '$senha')";
 
-$sql = 'INSERT INTO clientes (nome, email, telefone,senha)
-VALUES (nome, email, telefone)';
-
-if ($conexao->query($sql) === TRUE) {
-    echo "New record created successfully";
-  } else {
-    echo "Error: " . $sql . "<br>" . $conexao->error;
-  }
-  
-  $conexao->close();
-
-header('Location: ../perfil.php');
-
-
+if(mysqli_query($conexao, $sql)){
+    echo "Usuário cadastrado com sucesso";
+}
+else{
+    echo "Erro".mysqli_connect_error($conexao);
+}
 
 ?>
