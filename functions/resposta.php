@@ -11,7 +11,8 @@ print_r($email);
 print_r($telefone);
 //Inserindo dados na tabela
 
-$sql = "UPDATE clientes SET nome = '$nome', email = '$email', telefone = '$telefone' WHERE id = 1";
+$sql = 'INSERT INTO clientes (nome, email, telefone)
+VALUES (nome, email, telefone)';
 
 if ($conexao->query($sql) === TRUE) {
     echo "New record created successfully";
