@@ -85,20 +85,12 @@ $result = $conexao->query($sql);
             </div>
             <div class="col">
               <div class="input-box">
-                <input type="submit" value="Excliur" name="exluir">
-
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col">
-              <div class="input-box">
                 <input type="submit" value="Sair" formaction="logout.php">
+
               </div>
             </div>
           </div>
         </form>
-
       </div>
     </div>
   </div>
