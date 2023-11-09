@@ -11,7 +11,7 @@ print_r($email);
 print_r($telefone);
 //Inserindo dados na tabela
 
-$sql = 'INSERT INTO clientes (nome, email, telefone)
+$sql = 'INSERT INTO clientes (nome, email, telefone,senha)
 VALUES (nome, email, telefone)';
 
 if ($conexao->query($sql) === TRUE) {
