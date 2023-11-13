@@ -9,19 +9,29 @@ O projeto foi dividido em duas partes.
 Na primeira parte foram definidas as cores e fontes do visual do site.<br>
 Já na segunda parte fizemos a documentação com diagramas, utilizando a UML (Unified Modeling Language), logo após utilizamos as linguagens de programação JavaScript, PHP e implementamos as APIs (Application Programming Interface) para suporte a Libras em nosso sistema e ViaCep para Consultar CEP de endereçamento do Brasil gratuitamente.
 
-**Clique aqui para acessar a documentação do Projeto:**
+##
 
-[![Documentos](https://img.shields.io/badge/Documentação_BeloMar_2023-214F84?style=for-the-badge)](https://github.com/LuisaSantosSilva/BeloMar/tree/main/Documentos)
+<div align="center">
+  <h4>Clique aqui para acessar a documentação do Projeto:</h4>
 
-**Linguagens e técnologias que utilizamos:** <br>
-<p>
-<img src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-original.svg" title="HTML5" alt="HTML" width="40" height="30"/>&nbsp;
-<img src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-plain-wordmark.svg"  title="CSS3" alt="CSS" width="40" height="30"/>&nbsp;
-<img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg" title="JavaScript" alt="JavaScript" width="40" height="30"/>&nbsp; 
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg" title="PHP" alt="PHP" width="40" height="30" />&nbsp; 
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" title="MySql" alt="MySql" width="40" height="30" />&nbsp;
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg" title="Bootstrap" alt="Bootstrap" width="40"height="30"/>&nbsp;
-</p>
+  [![Documentos](https://img.shields.io/badge/Documentação_BeloMar_2023-214F84?style=for-the-badge)](https://github.com/LuisaSantosSilva/BeloMar/tree/main/Documentos)
+  
+  <h4>Alguns Layouts das telas:</h4>
+  <img width="500" src="https://github.com/LuisaSantosSilva/BeloMar/blob/main/img_README.md/layout1.png"><br>
+  <img width="500" src="https://github.com/LuisaSantosSilva/BeloMar/blob/main/img_README.md/layout2.png">
+
+  <h4>Linguagens e técnologias que utilizamos:</h4> <br>
+  <p>
+  <img src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-original.svg" title="HTML5" alt="HTML" width="40" height="30"/>&nbsp;
+  <img src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-plain-wordmark.svg"  title="CSS3" alt="CSS" width="40" height="30"/>&nbsp;
+  <img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg" title="JavaScript" alt="JavaScript" width="40" height="30"/>&nbsp; 
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg" title="PHP" alt="PHP" width="40" height="30" />&nbsp; 
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" title="MySql" alt="MySql" width="40" height="30" />&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg" title="Bootstrap" alt="Bootstrap" width="40"height="30"/>&nbsp;
+  </p>
+</div>
+
+##
 
 **Possíveis perguntas:**
 
@@ -30,4 +40,11 @@ Já na segunda parte fizemos a documentação com diagramas, utilizando a UML (U
 
 **Q:** Qual o principal diferencial?
 > **Resp:** Além do acompanhamento da entrega do pedido e classificação do produto o principal diferencial é a iniciativa que combina a beleza das flores com uma proposta social, onde um determinado valor de cada compra é utilizado para arrecadar recursos para ONGs (organizações não governamentais) que ajudam o meio ambiente.
+
+##
+
+<div align="center">
+  <h4>Conheça nosso time:</h4>
+  <img width="500" src="https://github.com/LuisaSantosSilva/BeloMar/blob/main/img_README.md/grupo.jpeg">
+</div>
 
