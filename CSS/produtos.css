@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+body {
+    overflow-x: hidden;
+}
+
 .button{
     transform: scale(1.03);
     transition-duration: 0.5s;

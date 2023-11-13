@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+body {
+    overflow-x: hidden;
+}
+
 /* Estilizando a cor de todos os textos que forem h4 */
 h4 {
     color: #214f84;

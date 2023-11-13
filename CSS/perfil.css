@@ -1,5 +1,13 @@
 @charset "UTF-8";
 
+body {
+    overflow-x: hidden;
+}
+
+#erro {
+    color: red;
+}
+
 .container-login {
     /* container-login é o container principal que abrange toda a página de login. */
     position: relative;

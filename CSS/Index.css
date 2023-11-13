@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+body {
+  overflow-x: hidden;
+}
+
 /* Estilizando a navbar */
 .navbar{
   background-color:rgb(33, 79, 132);
@@ -44,3 +48,4 @@ footer {
 .mar{
     text-align: justify;
 }
+

@@ -1,26 +1,9 @@
-.circulo {
-	width: 100px;
-	height: 100px;
-	border-radius: 50%;
-	overflow: hidden;
-	float: left;
-	margin: 15px;
-	transition: 0.3s ease;
+@charset "UTF-8";
+
+body {
+	overflow-x: hidden;
 }
 
-.circulo:hover{
-	transform: rotateY(180deg);
-}
-
-.circulo-pequeno {
-	width: 20px;
-	height: 20px;
-	border-radius: 50%;
-	margin: 10px;
-	float: left;
-	animation: circulo 1s linear infinite;
-}
-
-.circulo-pequeno.lime {
-	animation: circulo-inverno 1s linear infinite;
+div#container {
+	overflow-x: auto;
 }

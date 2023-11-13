@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+body {
+  overflow-x: hidden;
+}
+
 #p{
   text-align: justify;
 }
@@ -17,7 +21,6 @@
 .card {
 
     margin: 100px auto 0;
-
     width: 400px;
     height: 600px;
     perspective: 1000px;

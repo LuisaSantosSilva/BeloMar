@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+body {
+  overflow-x: hidden;
+}
+
 #ongbtn{
     background-color: #214f84;
     border-color: #214f84;
@@ -22,4 +26,16 @@
 
 .card__ong{
   margin-bottom: 1rem;
+}
+
+#contador {
+  font-size: 48px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+#mensagem {
+  text-align: center;
+  font-size: 18px;
+  color: #555;
 }
