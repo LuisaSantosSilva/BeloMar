@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+/* Estilizando a navbar */
+.navbar{
+    background-color:rgb(33, 79, 132);
+}
+
+.container-fluid a {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
