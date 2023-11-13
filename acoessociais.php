@@ -19,12 +19,54 @@
     <br>
 
     <div class="container text-center">
+
         <div class="row">
             <div class="col">
                 <h3 class="ong">ONGS associadas</h3>
                 <hr>
             </div>
         </div>
+
+        <!-- Contador da página: -->
+        <div id="mensagem">Ajude-nos a fazer a diferença na vida das pessoas!</div>
+        <div id="contador">0</div>
+
+        <script>
+            var mensagensMotivacionais = [
+                "Cada doação faz um impacto positivo!",
+                "Juntos, podemos mudar vidas!",
+                "Sua contribuição faz a diferença no mundo!",
+                "Doar é um ato de amor e solidariedade.",
+                "Ajude-nos a construir um futuro melhor para todos!",
+                "Cada centavo conta para quem precisa!",
+                "Sua doação cria oportunidades para aqueles que mais precisam."
+            ];
+
+            function getRandomMessage() {
+                return mensagensMotivacionais[Math.floor(Math.random() * mensagensMotivacionais.length)];
+            }
+
+            function atualizarContador() {
+                var contadorElemento = document.getElementById('contador');
+                var mensagemElemento = document.getElementById('mensagem');
+
+                var contadorAtual = parseInt(contadorElemento.innerText);
+                var limite = 100;
+
+                contadorAtual++;
+                contadorElemento.innerText = contadorAtual;
+
+                if (contadorAtual < limite) {
+                    mensagemElemento.innerText = getRandomMessage();
+                    setTimeout(atualizarContador, 100);
+                } else {
+                    mensagemElemento.innerText = "Obrigado por fazer a diferença!";
+                }
+            }
+
+            atualizarContador();
+        </script>
+
         <div class="row">
             <div class="col">
                 <p class="ongass">
@@ -36,9 +78,8 @@
                 <br>
             </div>
         </div>
-    
-    </div>
 
+        <!-- Link para encontar as ongs: -->
         <div class="container__ongs">
             <div class="row">
                 <div class="col card__ong">
@@ -71,6 +112,7 @@
             </div>
         </div>
 
+    </div>
     <br>
     <hr>
 

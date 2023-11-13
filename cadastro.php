@@ -41,23 +41,23 @@
                         <!-- Cria uma caixa de entrada de texto -->
                         <span>Nome Completo</span>
                         <!-- Insere um rótulo para o campo de entrada -->
-                        <input type="text" name="nome" placeholder="Digite o seu nome completo">
+                        <input type="text" name="nome" placeholder="Digite o seu nome completo" required>
                         <!-- Cria um campo de texto para o nome com um placeholder -->
                     </div>
                     <!-- Fim da caixa de entrada de texto -->
                     <div class="input-box">
                         <span>Email</span>
-                        <input type="email" name="email" placeholder="@mail.com">
+                        <input type="email" name="email" placeholder="@mail.com" required>
                         <!-- Cria um campo de email com um placeholder -->
                     </div>
                     <div class="input-box">
                         <span>Telefone</span>
-                        <input type="tel" name="telefone" placeholder="Digite o seu telefone">
+                        <input type="tel" name="telefone" placeholder="Digite o seu telefone" required>
                         <!-- Cria um campo de telefone com um placeholder -->
                     </div>
                     <div class="input-box">
                         <span>Senha</span>
-                        <input type="password" name="senha" placeholder="Digite sua senha">
+                        <input type="password" name="senha" placeholder="Digite sua senha" required>
                         <!-- Cria um campo de senha com um placeholder -->
                     </div>
                     <div class="input-box">

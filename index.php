@@ -69,20 +69,22 @@
            <div class="row">
                <div class="col">
                    <img src="img/img_Index/sign1.png" width="250" height="400" id="ppd">
+                   <br><hr>
                </div>
                <div class="col">
                    <img src="img/img_Index/sign2.png" width="250" height="400" id="ppd">
+                   <br><hr>
                </div>
            </div>
-           <br>
-           <hr>
            <br>
            <div class="row">
                <div class="col">
                    <img src="img/img_Index/sign3.png" width="250" height="400" id="ppd">
+                   <br><hr>
                </div>
                <div class="col">
                    <img src="img/img_Index/sign4.png" width="250" height="400" id="ppd">
+                   <br><hr>
                </div>
            </div>
            <br>
@@ -92,9 +94,25 @@
                    <p>Caso queira conhecer mais significados vá para barra de navegação</p>
                </div>
            </div>
-           <hr>
-</div>
+       </div>
        <br>
+    <div class="container text-center" id="HomeBody2">
+        <hr>
+        <div class="row">
+            <h4>Você sabia?</h4>
+            <p class="mar">No Brasil, a alergia ao pólen é uma condição cada vez mais prevalente, afetando uma parcela significativa da população.
+                Segundo dados de pesquisas recentes, cerca de 30% dos brasileiros sofrem de algum grau de alergia ao pólen, tornando-a uma das
+                principais causas de alergias respiratórias no país. As regiões com maior incidência costumam ser o Sul e o Sudeste, devido à presença
+                de árvores e gramíneas produtoras de pólen. A condição pode resultar em sintomas incômodos, como espirros, coceira nos olhos e
+                congestão nasal, e é um desafio para muitos brasileiros que precisam lidar com essas alergias sazonalmente. Portanto, a conscientização
+                e a busca por tratamentos adequados são essenciais para melhorar a qualidade de vida das pessoas afetadas</p>
+            <div class="row">
+                <p><a class="link-hme" href="alergias.php">Conheça nossa pagina de alergias!!</a></p>
+            </div>
+        </div>
+        <br>
+        <hr>
+    </div>
        <div class="container text-center" id="HomeBody2">
            <div class="row">
                <h4>ONGS que você pode ajudar comprando conosco:</h4>

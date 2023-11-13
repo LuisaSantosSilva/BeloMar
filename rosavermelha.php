@@ -1,3 +1,10 @@
+<?php 	
+	require_once "functions/product.php";
+	$pdoConnection = require_once "connection.php";
+	$products = getProducts($pdoConnection);
+  session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,157 +34,74 @@
     <!-- Uma linha com três colunas -->
     <div class="row">
       <div class="col">
+      <div class="container text-center">
         <!-- Título principal -->
         <h2 class="h1">Flor Rosa</h2>
+      </div>
       </div>
       <br>
     </div>
     <!-- Outra linha com três colunas -->
     <div class="row">
-      <div class="col">
+      <div class="col-1">
         <!-- Espaço em branco -->
       </div>
       <div class="col">
         <!-- Parágrafo de texto sobre Rosa Vermelha -->
-        <p class="p">
+        <p>
           A origem mais antiga do nome Rosa está calcada nos elementos germânicos hrod, que significa "fama", e heid,
           que quer dizer "espécie” ou “tipo". Dessa forma, o nome apresenta o primeiro significado de “tipo formoso” ou
           “espécie famosa”.</p>
       </div>
       <div class="col">
         <!-- Mais texto sobre Rosa Vermelha-->
-        <p class="p"> Um nome que exala feminilidade, delicadeza e elegância, o nome Rosa apresenta duas possibilidades
+        <p> Um nome que exala feminilidade, delicadeza e elegância, o nome Rosa apresenta duas possibilidades
           de origens
           etimológicas, na qual ambas fazem referência direta a uma das flores mais populares para cultivo desde a
           Antiguidade, a rosa.</p>
       </div>
-      <div class="col">
+      <div class="col-1">
         <!-- Espaço em branco -->
       </div>
     </div>
     <br>
     <!-- Conteúdo de produtos com cartões Bootstrap -->
     <div class="container text-center">
-      <!-- Primeira linha de cartões -->
       <div class="row">
-        <div class="col">
-          <!-- Cartão com informações de produto -->
-          <div class="card">
-            <img src="img/img_Significados/BUQUÊ DE 6 ROSAS VERMELHAS.webp" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Buquê de 6 Rosas Vermelhas</h5>
-              <p class="card-text">Por R$ 109,90</p>
-              <!-- Botão para abrir um modal (janela pop-up) -->
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                Compre agora
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <!-- Cartão com informações de produto -->
-          <div class="card">
-            <img src="img/img_Significados/Rosa no Envelope Love.webp" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Rosa no Envelope Love</h5>
-              <p class="card-text">Por R$ 230,90</p>
-              <!-- Botão para abrir um modal (janela pop-up) -->
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                Compre agora
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <!-- Cartão com informações de produto -->
-          <div class="card">
-            <img src="img/img_Significados/PASSIONE DE ROSAS VERMELHAS.webp" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Passione de Rosas Vermelhas</h5>
-              <p class="card-text">Por R$ 298,90</p>
-              <!-- Botão para abrir um modal (janela pop-up) -->
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                Compre agora
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <!-- Cartão com informações de produto -->
-          <div class="card">
-            <img src="img/img_Significados/CAIXA PREMIUM EU TE AMO.webp" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Caixa Premium Eu Te Amo</h5>
-              <p class="card-text">Por R$64,90</p>
-              <!-- Botão para abrir um modal (janela pop-up) -->
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                Compre agora
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Mais linhas de cartões (repetição) -->
-      <br>
-      <div class="row">
-        <div class="col">
-          <!-- Cartão com informações de produto -->
-          <div class="card">
-            <img src="img/img_Significados/POEMA DE 24 ROSAS VERMELHAS.webp" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Poema de 24 Rosas Vermelhas</h5>
-              <p class="card-text">Por R$ 399,90</p>
-              <!-- Botão para abrir um modal (janela pop-up) -->
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                Compre agora
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <!-- Cartão com informações de produto -->
-          <div class="card">
-            <img src="img/img_Significados/ARRANJO 3 LINDAS ROSAS VERMELHAS.webp" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Arranjo 3 Lindas Rosos Vermelhas</h5>
-              <p class="card-text">Por R$ 139,90</p>
-              <!-- Botão para abrir um modal (janela pop-up) -->
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                Compre agora
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <!-- Cartão com informações de produto -->
-          <div class="card">
-            <img src="img/img_Significados/SENSACIONAL ROSA IMPORTADA VERMELHA.webp" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Sensacional Rosa Importada Vermelha</h5>
-              <p class="card-text">Por R$ 44,90</p>
-              <!-- Botão para abrir um modal (janela pop-up) -->
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                Compre agora
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <!-- Cartão com informações de produto -->
-          <div class="card">
-            <img src="img/img_Significados/BUQUÊ MAGNÍFICO DE ROSAS VERMELHAS.webp" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Buquê Magnífico de Rosas Vermelhas</h5>
-              <p class="card-text">Por R$ 179,90</p>
-              <!-- Botão para abrir um modal (janela pop-up) -->
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                Compre agora
-              </button>
-            </div>
-          </div>
-        </div>
+
+      <?php foreach($products as $product) : ?>
+        <?php if ($product['id'] >= 33 && $product['id'] <= 40) : ?>
+          <div class="col">
+                    <div class="cardmari card">
+                      <div class="card-body">
+                  <!--classe ligada com o css para o sombreamento dos cards de compra-->
+                      <img src="img/img_Significados/<?php echo $product['imagem']; ?>" class="card-img-top" /> <br>
+                            <h5 class="card-title"><?php echo $product['nome']; ?></h5>
+                            <h6 class="card-subtitle mb-2 text-muted">
+                                Por R$<?php echo number_format($product['preco'], 2, ',', '.'); ?>
+                            </h6>
+
+                            <?php if($product['qtd'] < 1){ 
+                              echo "Esse produto não está disponível no momento";
+                            }else { ;?>
+                              <?php
+                                if (isset($_SESSION['id'])) {;
+                                  // Se estiver logado, exibir o botão de compra ?>
+                                  <a class="btn btn-primary" href="carrinho.php?acao=add&id=<?php echo $product['id']; ?>" class="card-link">Adicionar ao Carrinho</a>
+                              <?php } else {
+                                  // Se não estiver logado, redirecionar para a página de login
+                                  echo"Faça seu Login e tenha ótimas compras";
+                              }
+                            } ;?>
+                    </div><!-- card body-->
+                  </div><!-- card -->
+                </div><!-- col -->    
+        <?php endif; ?>
+      <?php endforeach; ?>                          
+
       </div>
     </div>
+    <br>
 
     <!-- Footer da página: -->
     <?php include("footer.php"); ?>

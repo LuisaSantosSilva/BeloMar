@@ -1,3 +1,19 @@
+<?php
+session_start();
+include 'functions/conexao.php'; 
+
+    // Verifica se o usuário está autenticado
+    if (
+        !isset($_SESSION['id']) || empty($_SESSION['id']) ||
+        !isset($_SESSION['nome']) || empty($_SESSION['nome'])
+    ) {
+        // Redireciona para a página de erro
+        header("Location: admin/erro.php");
+        exit();
+    }
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -31,6 +47,8 @@
                     <h4> Belo Mar agradece sua preferência. </h4>
                     <!-- Incorporando mapa: -->
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.258943585228!2d-46.478386924493805!3d-23.523187260191147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce616495555555%3A0x8076d1577db86cf1!2sEtec%20da%20Zona%20Leste!5e0!3m2!1spt-BR!2sbr!4v1695880234877!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                      <br><br>
+                    <a class="btn btn-primary" href="nota.php">Meu pedido foi entregue</a>
                 </div>
             </div>
             <div class="col-3"> 

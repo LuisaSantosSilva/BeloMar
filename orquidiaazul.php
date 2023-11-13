@@ -1,3 +1,10 @@
+<?php 	
+	require_once "functions/product.php";
+	$pdoConnection = require_once "connection.php";
+	$products = getProducts($pdoConnection);
+  session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,14 +34,16 @@
   <!-- Uma linha com três colunas -->
   <div class="row">
     <div class="col">
+    <div class="container text-center">
       <!-- Título principal -->
-      <h2 class="h1">Flor Orquidia</h2>
+      <h2 class="h1">Flor Orquídia</h2>
+    <div>
     </div>
     <br>
   </div>
   <!-- Outra linha com três colunas -->
   <div class="row">
-    <div class="col">
+    <div class="col-1">
       <!-- Espaço em branco -->
     </div>
     <div class="col">
@@ -48,7 +57,7 @@
         planta possui uma diversidade de cores e formatos. Por conta disso, os significados da Orquídea podem variar.
         Conhecer a simbologia de cada uma delas é muito importante</p>
     </div>
-    <div class="col">
+    <div class="col-1">
       <!-- Espaço em branco -->
     </div>
   </div>
@@ -57,125 +66,39 @@
   <div class="container text-center">
     <!-- Primeira linha de cartões -->
     <div class="row">
-      <div class="col">
-        <!-- Cartão com informações de produto -->
-        <div class="card">
-          <img src="img/img_Significados/MINI ORQUÍDEA RARA E LINDT.webp" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Mini Orquidea Rara e Lindt</h5>
-            <p class="card-text">Por R$ 149,90</p>
-            <!-- Botão para abrir um modal (janela pop-up) -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-              Compre agora
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <!-- Cartão com informações de produto -->
-        <div class="card">
-          <img src="img/img_Significados/MINI ORQUÍDEA CHUVA DE OURO.webp" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Mini Orquidia chuva de Ouro</h5>
-            <p class="card-text">Por R$ 89,90</p>
-            <!-- Botão para abrir um modal (janela pop-up) -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-              Compre agora
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <!-- Cartão com informações de produto -->
-        <div class="card">
-          <img src="img/img_Significados/MINI ORQUÍDEA RARA AMARELA.webp" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Mini Orquidea para Amarela</h5>
-            <p class="card-text">Por R$ 99,90</p>
-            <!-- Botão para abrir um modal (janela pop-up) -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-              Compre agora
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <!-- Cartão com informações de produto -->
-        <div class="card">
-          <img src="img/img_Significados/MINI ORQUÍDEA RARA LILÁS.webp" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Mini Orquidea para Lilás</h5>
-            <p class="card-text">Por R$ 99,90</p>
-            <!-- Botão para abrir um modal (janela pop-up) -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-              Compre agora
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Mais linhas de cartões (repetição) -->
-    <br>
-    <div class="row">
-      <div class="col">
-        <!-- Cartão com informações de produto -->
-        <div class="card">
-          <img src="img/img_Significados/LINDAS PHALAENOPSIS PINK.webp" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Lindas Phalaenopsis Pink</h5>
-            <p class="card-text">Por R$ 398,90</p>
-            <!-- Botão para abrir um modal (janela pop-up) -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-              Compre agora
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <!-- Cartão com informações de produto -->
-        <div class="card">
-          <img src="img/img_Significados/GLAMUROSAS ORQUÍDEAS AMARELAS.webp" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Glamurosas Orquidea Amarelas</h5>
-            <p class="card-text">Por R$ 278,90</p>
-            <!-- Botão para abrir um modal (janela pop-up) -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-              Compre agora
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <!-- Cartão com informações de produto -->
-        <div class="card">
-          <img src="img/img_Significados/ORQUÍDEA AZUL NO BOX AZULEJO.webp" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">OrquideaAzul no BOx Azulejo</h5>
-            <p class="card-text">Por R$ 349,90</p>
-            <!-- Botão para abrir um modal (janela pop-up) -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-              Compre agora
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <!-- Cartão com informações de produto -->
-        <div class="card">
-          <img src="img/img_Significados/ORQUÍDEA MILTONIA PLANTADA BRANCA.webp" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Orquidea Miltonia Plantada Branca</h5>
-            <p class="card-text">Por R$99,00</p>
-            <!-- Botão para abrir um modal (janela pop-up) -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-              Compre agora
-            </button>
-          </div>
-        </div>
-      </div>
+      <?php foreach($products as $product) : ?>
+          <?php if ($product['id'] >= 49 && $product['id'] <= 56) : ?>
+            <div class="col">
+                      <div class="cardmari card">
+                        <div class="card-body">
+                    <!--classe ligada com o css para o sombreamento dos cards de compra-->
+                        <img src="img/img_Significados/<?php echo $product['imagem']; ?>" class="card-img-top" /> <br>
+                              <h5 class="card-title"><?php echo $product['nome']; ?></h5>
+                              <h6 class="card-subtitle mb-2 text-muted">
+                                  Por R$<?php echo number_format($product['preco'], 2, ',', '.'); ?>
+                              </h6>
+
+                              <?php if($product['qtd'] < 1){ 
+                                echo "Esse produto não está disponível no momento";
+                              }else { ;?>
+                                <?php
+                                  if (isset($_SESSION['id'])) {;
+                                    // Se estiver logado, exibir o botão de compra ?>
+                                    <a class="btn btn-primary" href="carrinho.php?acao=add&id=<?php echo $product['id']; ?>" class="card-link">Adicionar ao Carrinho</a>
+                                <?php } else {
+                                    // Se não estiver logado, redirecionar para a página de login
+                                    echo"Faça seu Login e tenha ótimas compras";
+                                }
+                              } ;?>
+                      </div><!-- card body-->
+                    </div><!-- card -->
+                  </div><!-- col -->    
+          <?php endif; ?>
+        <?php endforeach; ?>                          
+
     </div>
   </div>
-
+      <br>
  <!-- Footer da página: -->
  <?php include("footer.php"); ?>
  

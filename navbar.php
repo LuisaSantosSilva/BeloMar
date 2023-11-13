@@ -1,3 +1,10 @@
+<?php
+  if (strcmp(basename($_SERVER['SCRIPT_NAME']), basename(__FILE__)) === 0) {
+      header("location: index.php");
+      exit();
+  }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -75,6 +82,9 @@
                                 </li>
                                 <li class="nav-item">
                                   <a class="nav-link" href="login.php">Login</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="dashboard.php">Perfil</a>
                                 </li>
                             </ul>
                         </div>

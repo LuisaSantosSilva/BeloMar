@@ -1,3 +1,10 @@
+<?php 	
+	require_once "functions/product.php";
+	$pdoConnection = require_once "connection.php";
+	$products = getProducts($pdoConnection);
+  session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,14 +34,16 @@
   <!-- Uma linha com três colunas -->
   <div class="row">
     <div class="col">
+    <div class="container text-center">
       <!-- Título principal -->
       <h2 class="h1">Flor Astromélia</h2>
+    </div>
     </div>
     <br>
   </div>
   <!-- Outra linha com três colunas -->
   <div class="row">
-    <div class="col">
+    <div class="col-1">
       <!-- Espaço em branco -->
     </div>
     <div class="col">
@@ -49,7 +58,7 @@
         humor, paciência, empatia, compromisso e respeito. Quando você entregar o arranjo de astromélia a alguém,
         escreva um bilhete explicando esse significado. O presente se torna ainda mais especial!</p>
     </div>
-    <div class="col">
+    <div class="col-1">
       <!-- Espaço em branco -->
     </div>
   </div>
@@ -58,124 +67,39 @@
   <div class="container text-center">
     <!-- Primeira linha de cartões -->
     <div class="row">
-      <div class="col">
-        <!-- Cartão com informações de produto -->
-        <div class="card">
-          <img src="img/img_Significados/SENSACIONAL ASTROMÉLIA VERMELHA.webp" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Sensacional Astromélia Vermelha</h5>
-            <p class="card-text">Por R$ 49,90</p>
-            <!-- Botão para abrir um modal (janela pop-up) -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-              Compre agora
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <!-- Cartão com informações de produto -->
-        <div class="card">
-          <img src="img/img_Significados/ARRANJO FLORES E VIDA AMARELO.webp" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Arranjo Flores e Vida Amarelo</h5>
-            <p class="card-text">Por R$ 218,97</p>
-            <!-- Botão para abrir um modal (janela pop-up) -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-              Compre agora
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <!-- Cartão com informações de produto -->
-        <div class="card">
-          <img src="img/img_Significados/EXPRESSÃO DE AMOR PREMIUM.webp" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Expressão de Amor Premium</h5>
-            <p class="card-text">Por R$ 329,90</p>
-            <!-- Botão para abrir um modal (janela pop-up) -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-              Compre agora
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <!-- Cartão com informações de produto -->
-        <div class="card">
-          <img src="img/img_Significados/DECLARAÇÃO DE SENTIMENTOS.webp" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Declaração de Sentimentos</h5>
-            <p class="card-text">Por R$ 149,90</p>
-            <!-- Botão para abrir um modal (janela pop-up) -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-              Compre agora
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Mais linhas de cartões (repetição) -->
-    <br>
-    <div class="row">
-      <div class="col">
-        <!-- Cartão com informações de produto -->
-        <div class="card">
-          <img src="img/img_Significados/LUXUOSAS ASTROMÉLIAS COLORIDAS HAPPY BIRTHDAY.webp" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Luxuosas Astromélia Coloridas Harry Birthday </h5>
-            <p class="card-text">Por R$ 259,90</p>
-            <!-- Botão para abrir um modal (janela pop-up) -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-              Compre agora
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <!-- Cartão com informações de produto -->
-        <div class="card">
-          <img src="img/img_Significados/DELICADO BOX DE ASTROMÉLIAS E ROSAS BRANCAS.webp" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Delicado Box de Astromélia e Rosas Brancas</h5>
-            <p class="card-text">Por R$ R$ 169,90</p>
-            <!-- Botão para abrir um modal (janela pop-up) -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-              Compre agora
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <!-- Cartão com informações de produto -->
-        <div class="card">
-          <img src="img/img_Significados/BUQUÊ IMPÉRIO COM ASTROMÉLIAS COR DE ROSA.webp" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Buquê Imperio com Astromélia Cor de Rosa</h5>
-            <p class="card-text">Por R$ 79,90</p>
-            <!-- Botão para abrir um modal (janela pop-up) -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-              Compre agora
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <!-- Cartão com informações de produto -->
-        <div class="card">
-          <img src="img/img_Significados/ASTROMÉLIAS COLORIDAS NO BOX POR ONDE FOR FLORESÇA.webp" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Astromélia Coloridas no Box Onde For Floresça</h5>
-            <p class="card-text">Por R$ 159,90</p>
-            <!-- Botão para abrir um modal (janela pop-up) -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-              Compre agora
-            </button>
-          </div>
-        </div>
-      </div>
+      <?php foreach($products as $product) : ?>
+          <?php if ($product['id'] >= 57 && $product['id'] <= 64) : ?>
+            <div class="col">
+                      <div class="cardmari card">
+                        <div class="card-body">
+                    <!--classe ligada com o css para o sombreamento dos cards de compra-->
+                        <img src="img/img_Significados/<?php echo $product['imagem']; ?>" class="card-img-top" /> <br>
+                              <h5 class="card-title"><?php echo $product['nome']; ?></h5>
+                              <h6 class="card-subtitle mb-2 text-muted">
+                                  Por R$<?php echo number_format($product['preco'], 2, ',', '.'); ?>
+                              </h6>
+
+                              <?php if($product['qtd'] < 1){ 
+                                echo "Esse produto não está disponível no momento";
+                              }else { ;?>
+                                <?php
+                                  if (isset($_SESSION['id'])) {;
+                                    // Se estiver logado, exibir o botão de compra ?>
+                                    <a class="btn btn-primary" href="carrinho.php?acao=add&id=<?php echo $product['id']; ?>" class="card-link">Adicionar ao Carrinho</a>
+                                <?php } else {
+                                    // Se não estiver logado, redirecionar para a página de login
+                                    echo"Faça seu Login e tenha ótimas compras";
+                                }
+                              } ;?>
+                      </div><!-- card body-->
+                    </div><!-- card -->
+                  </div><!-- col -->    
+          <?php endif; ?>
+        <?php endforeach; ?>                          
+
     </div>
   </div>
+      <br>
 
   <!-- Footer da página: -->
   <?php include("footer.php"); ?>

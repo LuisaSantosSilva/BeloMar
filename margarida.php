@@ -1,3 +1,10 @@
+<?php 	
+	require_once "functions/product.php";
+	$pdoConnection = require_once "connection.php";
+	$products = getProducts($pdoConnection);
+  session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,158 +34,75 @@
   <!-- Uma linha com três colunas -->
   <div class="row">
     <div class="col">
-      <!-- Título principal -->
-      <h2 class="h1">Flor Margarida</h2>
+      <div class="container text-center">
+        <!-- Título principal -->
+        <h2 class="h1">Flor Margarida</h2>
+      </div>
     </div>
     <br>
   </div>
   <!-- Outra linha com três colunas -->
   <div class="row">
-    <div class="col">
+    <div class="col-1">
       <!-- Espaço em branco -->
     </div>
     <div class="col">
       <!-- Parágrafo de texto sobre margarida -->
-      <p class="p">A margarida é uma flor delicada e uma das mais conhecidas na hora de presentear. Além de ter várias
+      <p>A margarida é uma flor delicada e uma das mais conhecidas na hora de presentear. Além de ter várias
         opções de cores, com margarida amarela, vermelha ou branca, formando assim um lindíssimo buquê. As margaridas
         também são conhecidas como mal-me-quer, crisântemo, bem-me-quer, bonina, margarita, margarita-maior,
         mal-me-quer-bravo e olho-de-boi.</p>
     </div>
     <div class="col">
       <!-- Mais texto sobre margarida -->
-      <p class="p">Como existem muitos tipos de margaridas,
+      <p>Como existem muitos tipos de margaridas,
         cada cor possui um significado específico.
         Uma sugestão é apostar em diferentes cores de margaridas para decorar o lar ou até mesmo presentar
         alguém. Ao dar a flor de margarida de presente para alguém especial, você está lhe prometendo amor fiel e
         verdadeiro, independentemente da cor da planta.</p>
     </div>
-    <div class="col">
+    <div class="col-1">
       <!-- Espaço em branco -->
     </div>
   </div>
   <br>
   <!-- Conteúdo de produtos com cartões Bootstrap -->
   <div class="container text-center">
-    <!-- Primeira linha de cartões -->
-    <div class="row">
-      <div class="col">
-        <!-- Cartão com informações de produto -->
-        <div class="card">
-          <img src="img/img_Significados/LUXUOSO MIX DE MARGARIDAS.webp" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Luxuoso Mix de Margaridas</h5>
-            <p class="card-text">Por R$179,90</p>
-            <!-- Botão para abrir um modal (janela pop-up) -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-              Compre agora
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <!-- Cartão com informações de produto -->
-        <div class="card">
-          <img src="img/img_Significados/LUXUOSO MIX DE MARGARIDAS COLORIDAS.webp" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Luxuoso Mix de Margaridas Coloridas</h5>
-            <p class="card-text">Por R$ 269,903</p>
-            <!-- Botão para abrir um modal (janela pop-up) -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-              Compre agora
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <!-- Cartão com informações de produto -->
-        <div class="card">
-          <img src="img/img_Significados/MARGARIDINHAS BRANCAS E FERRERO ROCHER.webp" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Margardinhas Brancas e Ferrero Rocher</h5>
-            <p class="card-text">Por R$ 109,90</p>
-            <!-- Botão para abrir um modal (janela pop-up) -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-              Compre agora
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <!-- Cartão com informações de produto -->
-        <div class="card">
-          <img src="img/img_Significados/LINDA MARGARIDINHA PLANTADA.webp" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Linda Margardinha Plantada</h5>
-            <p class="card-text">Por R$ 79,90</p>
-            <!-- Botão para abrir um modal (janela pop-up) -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-              Compre agora
-            </button>
-          </div>
-        </div>
+      <div class="row">
+      
+      <?php foreach($products as $product) : ?>
+        <?php if ($product['id'] >= 25 && $product['id'] <= 32) : ?>
+          <div class="col">
+                    <div class="cardmari card">
+                      <div class="card-body">
+                  <!--classe ligada com o css para o sombreamento dos cards de compra-->
+                      <img src="img/img_Significados/<?php echo $product['imagem']; ?>" class="card-img-top" /> <br>
+                            <h5 class="card-title"><?php echo $product['nome']; ?></h5>
+                            <h6 class="card-subtitle mb-2 text-muted">
+                                Por R$<?php echo number_format($product['preco'], 2, ',', '.'); ?>
+                            </h6>
+
+                            <?php if($product['qtd'] < 1){ 
+                              echo "Esse produto não está disponível no momento";
+                            }else { ;?>
+                              <?php
+                                if (isset($_SESSION['id'])) {;
+                                  // Se estiver logado, exibir o botão de compra ?>
+                                  <a class="btn btn-primary" href="carrinho.php?acao=add&id=<?php echo $product['id']; ?>" class="card-link">Adicionar ao Carrinho</a>
+                              <?php } else {
+                                  // Se não estiver logado, redirecionar para a página de login
+                                  echo"Faça seu Login e tenha ótimas compras";
+                              }
+                            } ;?>
+                    </div><!-- card body-->
+                  </div><!-- card -->
+                </div><!-- col -->    
+        <?php endif; ?>
+      <?php endforeach; ?>                          
+
       </div>
     </div>
-    <!-- Mais linhas de cartões (repetição) -->
     <br>
-    <div class="row">
-      <div class="col">
-        <!-- Cartão com informações de produto -->
-        <div class="card">
-          <img src="img/img_Significados/MINI VASO DE MARGARIDINHAS PLANTADAS.webp" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Mini Vaso de Margardinhas Plantadas</h5>
-            <p class="card-text">Por R$ 79,90</p>
-            <!-- Botão para abrir um modal (janela pop-up) -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-              Compre agora
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <!-- Cartão com informações de produto -->
-        <div class="card">
-          <img src="img/img_Significados/MINI MARGARIDINHAS BRANCAS COM EMOJI CORAÇÃOZINHO.webp" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Mini Margardinhas Brancas com Emoji Coraçãozinho</h5>
-            <p class="card-text">Por R$ 69,90</p>
-            <!-- Botão para abrir um modal (janela pop-up) -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-              Compre agora
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <!-- Cartão com informações de produto -->
-        <div class="card">
-          <img src="img/img_Significados/MARGARIDINHAS E BRIGADEIROS NO ENVELOPE.webp" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Margardinhas e Brigadeiros no Envelope</h5>
-            <p class="card-text">Por R$ 161,90</p>
-            <!-- Botão para abrir um modal (janela pop-up) -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-              Compre agora
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <!-- Cartão com informações de produto -->
-        <div class="card">
-          <img src="img/img_Significados/KIT DE MARGARIDINHAS AMARELAS HAPPY BIRTHDAY.webp" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Kit Margardinhas Amarelas Harry Birthday</h5>
-            <p class="card-text">Por R$ 159,90</p>
-            <!-- Botão para abrir um modal (janela pop-up) -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-              Compre agora
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <!-- Footer da página: -->
   <?php include("footer.php"); ?>

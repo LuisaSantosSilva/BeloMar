@@ -1,3 +1,10 @@
+<?php 	
+	require_once "functions/product.php";
+	$pdoConnection = require_once "connection.php";
+	$products = getProducts($pdoConnection);
+  session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,14 +34,16 @@
   <!-- Uma linha com três colunas -->
   <div class="row">
     <div class="col">
+    <div class="container text-center">
       <!-- Título principal -->
       <h2 class="h1">Flor Lírio</h2>
+    </div>
     </div>
     <br>
   </div>
   <!-- Outra linha com três colunas -->
   <div class="row">
-    <div class="col">
+    <div class="col-1">
       <!-- Espaço em branco -->
     </div>
     <div class="col">
@@ -51,7 +60,7 @@
         lilás ou roxo, representa os sentimentos positivos, matrimônio, a maternidade. Uma característica dessa flor é
         que ela possui um aroma forte e adocicado.</p>
     </div>
-    <div class="col">
+    <div class="col-1">
       <!-- Espaço em branco -->
     </div>
   </div>
@@ -60,124 +69,39 @@
   <div class="container text-center">
     <!-- Primeira linha de cartões -->
     <div class="row">
-      <div class="col">
-        <!-- Cartão com informações de produto -->
-        <div class="card">
-          <img src="img/img_Significados/SURPRESA DE LÍRIOS COLORIDOS.webp" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Supresa de Lírios Coloridos</h5>
-            <p class="card-text">Por R$ 249,90</p>
-            <!-- Botão para abrir um modal (janela pop-up) -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-              Compre agora
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <!-- Cartão com informações de produto -->
-        <div class="card">
-          <img src="img/img_Significados/SURPRESA DE LÍRIOS BRANCOS.webp" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Supresa de Lírios Brancos</h5>
-            <p class="card-text">Por R$ 265,90</p>
-            <!-- Botão para abrir um modal (janela pop-up) -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-              Compre agora
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <!-- Cartão com informações de produto -->
-        <div class="card">
-          <img src="img/img_Significados/LUXUOSOS LÍRIOS COR-DE-ROSA.webp" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Luxuosos Lírios Cor-de-Rosa</h5>
-            <p class="card-text">Por R$ 389,90</p>
-            <!-- Botão para abrir um modal (janela pop-up) -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-              Compre agora
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <!-- Cartão com informações de produto -->
-        <div class="card">
-          <img src="img/img_Significados/LÍRIO BRANCO PLANTADO.webp" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title"> Lírios Brancos Plantado</h5>
-            <p class="card-text">Por R$ 265,90</p>
-            <!-- Botão para abrir um modal (janela pop-up) -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-              Compre agora
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <br>
-    <!-- Mais linhas de cartões (repetição) -->
-    <div class="row">
-      <div class="col">
-        <!-- Cartão com informações de produto -->
-        <div class="card">
-          <img src="img/img_Significados/CESTA DE MARGARIDAS E LÍRIOS PINK.webp" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Cesta de Margaridas e Lírios Pink</h5>
-            <p class="card-text">Por R$ 288,80</p>
-            <!-- Botão para abrir um modal (janela pop-up) -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-              Compre agora
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <!-- Cartão com informações de produto -->
-        <div class="card">
-          <img src="img/img_Significados/JARDIM DE LÍRIOS AMARELOS.webp" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Jardin de Lírios Amarelos</h5>
-            <p class="card-text">Por R$ 558,90</p>
-            <!-- Botão para abrir um modal (janela pop-up) -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-              Compre agora
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <!-- Cartão com informações de produto -->
-        <div class="card">
-          <img src="img/img_Significados/LUXUOSOS LÍRIOS COR-DE-ROSA.webp" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Luxuosos Lírios Cor-de-Rosa</h5>
-            <p class="card-text">Por R$ 389,90</p>
-            <!-- Botão para abrir um modal (janela pop-up) -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-              Compre agora
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <!-- Cartão com informações de produto -->
-        <div class="card">
-          <img src="img/img_Significados/LÍRIO BRANCO PLANTADO.webp" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Supresa de Lírios Brancos </h5>
-            <p class="card-text">Por R$ 265,90</p>
-            <!-- Botão para abrir um modal (janela pop-up) -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-              Compre agora
-            </button>
-          </div>
-        </div>
-      </div>
+      <?php foreach($products as $product) : ?>
+          <?php if ($product['id'] >= 41 && $product['id'] <= 48) : ?>
+            <div class="col">
+                      <div class="cardmari card">
+                        <div class="card-body">
+                    <!--classe ligada com o css para o sombreamento dos cards de compra-->
+                        <img src="img/img_Significados/<?php echo $product['imagem']; ?>" class="card-img-top" /> <br>
+                              <h5 class="card-title"><?php echo $product['nome']; ?></h5>
+                              <h6 class="card-subtitle mb-2 text-muted">
+                                  Por R$<?php echo number_format($product['preco'], 2, ',', '.'); ?>
+                              </h6>
+
+                              <?php if($product['qtd'] < 1){ 
+                                echo "Esse produto não está disponível no momento";
+                              }else { ;?>
+                                <?php
+                                  if (isset($_SESSION['id'])) {;
+                                    // Se estiver logado, exibir o botão de compra ?>
+                                    <a class="btn btn-primary" href="carrinho.php?acao=add&id=<?php echo $product['id']; ?>" class="card-link">Adicionar ao Carrinho</a>
+                                <?php } else {
+                                    // Se não estiver logado, redirecionar para a página de login
+                                    echo"Faça seu Login e tenha ótimas compras";
+                                }
+                              } ;?>
+                      </div><!-- card body-->
+                    </div><!-- card -->
+                  </div><!-- col -->    
+          <?php endif; ?>
+        <?php endforeach; ?>                          
+
     </div>
   </div>
+      <br>
 
   <!-- Footer da página: -->
   <?php include("footer.php"); ?>

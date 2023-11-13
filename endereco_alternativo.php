@@ -1,4 +1,21 @@
-<html>
+<?php
+session_start();
+include 'functions/conexao.php'; 
+
+    // Verifica se o usuário está autenticado
+    if (
+        !isset($_SESSION['id']) || empty($_SESSION['id']) ||
+        !isset($_SESSION['nome']) || empty($_SESSION['nome'])
+    ) {
+        // Redireciona para a página de erro
+        header("Location: admin/erro.php");
+        exit();
+    }
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -26,10 +43,15 @@
         <div class="content-box">
             <!-- Caixa de formulário -->
             <div class="form-box">
-                <h2>Adicionar Endereço 
+                <h2>Confirmar Endereço de entrega 
                 </h2>
                 <form>
-                    <div class="input-box">
+                <div class="input-box">
+                        <span>Cep</span>
+                        <input name="cep" type="cep" id="cep" value="" size="10" maxlength="9"
+                            onblur="pesquisacep(this.value);">
+                </div>
+                <div class="input-box">
                         <span>Rua</span>
                         <input name="rua" type="text" id="rua">
                     </div>
@@ -48,11 +70,6 @@
                         </div>
                     </div>
                     <div class="input-box">
-                        <span>Cep</span>
-                        <input name="cep" type="cep" id="cep" value="" size="10" maxlength="9"
-                            onblur="pesquisacep(this.value);">
-                    </div>
-                    <div class="input-box">
                         <span>Bairro</span>
                         <input name="bairro" type="bairro" id="bairro">
                     </div>
@@ -66,7 +83,7 @@
                     </div>
                     <br>
                     <!-- Botão de envio do formulário -->
-                    <a class="btn btn-outline-secondary" href="entrega.php">Acompanhar entrega</a>
+                    <a class="btn btn-outline-secondary" href="entrega.php">Continuar</a>
 
                     <!--<div class="input-box">
                         <input type="submit" value="Entrar">

@@ -2,6 +2,7 @@
 	require_once "functions/product.php";
 	$pdoConnection = require_once "connection.php";
 	$products = getProducts($pdoConnection);
+  session_start();
 ?>
 
 <!DOCTYPE html>
@@ -21,7 +22,6 @@
   
   <!-- Navbar da página: -->
   <?php include("navbar.php"); ?>
-  
   <!-- espaço entre a Navbar e os icones redondos-->
   <br>
   <!-- fileira dos icones redondos-->
@@ -60,8 +60,10 @@
 
     <!--inicio da coluna dos cards de compra-->
       <div class="row">
-      
-            <?php foreach($products as $product) : ;?>
+
+        <?php foreach($products as $product) : ;?>
+
+            <?php if ($product['id'] <= 16){ ;?>
               <div class="col">
                 <!--classe ligada com o css para o sombreamento dos cards de compra-->
                 <div class="cardmari card">
@@ -75,14 +77,22 @@
                           <?php if($product['qtd'] < 1){ 
                              echo "Esse produto não está disponível no momento";
                           }else { ;?>
-                              <a class="btn btn-primary" href="carrinho.php?acao=add&id=<?php echo $product['id']; ?>" class="card-link">Adicionar ao Carrinho</a>
-                          <?php } ;?>
+                            <?php
+                              if (isset($_SESSION['id'])) {;
+                                // Se estiver logado, exibir o botão de compra ?>
+                                <a class="btn btn-primary" href="carrinho.php?acao=add&id=<?php echo $product['id']; ?>" class="card-link">Adicionar ao Carrinho</a>
+                            <?php } else {
+                                // Se não estiver logado, redirecionar para a página de login
+                                echo"Faça seu Login e tenha ótimas compras";
+                            }
+                          } ;?>
+              <?php } ;?>
                           
                         
                     </div><!-- card body-->
                 </div><!-- card -->
               </div><!-- col -->      
-			      <?php endforeach;?>
+			  <?php endforeach;?>
 
       </div>
   </div>

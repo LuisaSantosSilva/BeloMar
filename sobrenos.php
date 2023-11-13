@@ -220,7 +220,7 @@
                 clique no botão abaixo, para que voê seja direcionado até lá,
                 Tenha ótimas compras. </p>
             </div>
-            <button type="button" class="btn btn-outline-primary" href="#">Ver contatos</button>
+            <a href="https://www.instagram.com/nossobelomar_/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA=="><button type="button" class="btn btn-outline-primary">Ver contatos</button></a>
             <br><br>
           </div>
           <div class="col">

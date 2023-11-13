@@ -1,3 +1,10 @@
+<?php
+  if (strcmp(basename($_SERVER['SCRIPT_NAME']), basename(__FILE__)) === 0) {
+      header("location: index.php");
+      exit();
+  }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,7 +25,6 @@
 <body>
   <footer><!--inicio do rodapé-->
       <div class="row">
-          <pre></pre>
           <div class="col">
               <img src="img/img_Footer/logo.jpeg" width="250" height="250" id="ppq">
           </div>
@@ -30,20 +36,19 @@
               <a class="footer-link" href="produtos.php"> Produtos</a>
             </div>
             <div class="row">
+              <a class="footer-link" href="diadosnamorados.php">Datas comemorativas</a>
+            </div>
+            <div class="row">
               <a class="footer-link" href="alergias.php">Alergias</a>
             </div>
             <div class="row">
               <a class="footer-link" href="sobrenos.php">Sobre nós</a>
             </div>
-            <div class="row">
-              <a class="footer-link" href="acoessociais.php">Ações Sociais</a>
-            </div>
-            <div class="row">
-              <a class="footer-link" href="login.php">Cadastre-se em nosso site!</a>
-            </div>
           </div>
       </div>
-      <a>Realização: Luisa - Revellin - Mariana - Layara - Nikolas </a>
+      <div class="col">
+        <a>Realização: Luisa - Revellin - Mariana - Layara - Nickolas </a>
+      </div>
   </footer><!--fim do rodapé-->
 
     <!--API de Libras --> 
