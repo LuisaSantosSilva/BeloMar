@@ -76,7 +76,7 @@
 
 	<div class="container text-center">
 		<div class="row">
-			<div class="col-1">
+			<div class="col-2">
 			&nbsp;
 			</div>
 
@@ -193,7 +193,7 @@
 				
 			</div>
 
-			<div class="col-1">
+			<div class="col-2">
 			&nbsp;
 			</div>
 		</div>

@@ -40,6 +40,7 @@ if((!isset($_SESSION['id'])) AND (!isset($_SESSION['nome']))){ ;?>
                 <p>Ficamos muito felizes de te ter aqui conosco</p>
                 <br>
                 <a href="produtos.php"><button type="button" class="btn btn-success">Comprar</button></a>
+                <br><br>
                 <a href="sair.php"><button type="button" class="btn btn-danger">Deslogar</button></a>
             </div>
             </div>

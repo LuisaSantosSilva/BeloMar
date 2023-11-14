@@ -38,11 +38,11 @@
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
+                      <span class="visually-hidden">Voltar</span>
                     </button>
                     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
+                      <span class="visually-hidden">Próximo</span>
                     </button>
                 </div>
             </div>
@@ -51,7 +51,7 @@
 
         <!-- Breve resumo de quem somos: -->
         <div class="row">
-            <div class="col-3"> 
+            <div class="col-2"> 
               &nbsp;
             </div>
             <div class="col"> 
@@ -71,7 +71,7 @@
                   </div>
                 </div>
             </div>
-            <div class="col-3"> 
+            <div class="col-2"> 
               &nbsp;
             </div>
         </div>
