@@ -2,10 +2,6 @@
 session_start();
 include 'functions/conexao.php';
 
-
-session_start();
-include 'functions/conexao.php'; 
-
     // Verifica se o usuário está autenticado
     if (
         !isset($_SESSION['id']) || empty($_SESSION['id']) ||
